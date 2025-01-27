@@ -26,14 +26,14 @@ export const NavigationDropdown = ({
         <Button 
           variant="outline" 
           size="icon" 
-          className="h-10 w-10 md:h-9 md:w-9 touch-manipulation"
+          className="h-10 w-10 md:h-9 md:w-9 touch-manipulation golden-hover"
         >
           <Menu className="h-5 w-5 md:h-4 md:w-4" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent 
         align="end" 
-        className="w-56 md:w-48"
+        className="w-56 md:w-48 "
       >
         <MenuItems 
           session={session}

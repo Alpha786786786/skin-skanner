@@ -17,7 +17,7 @@ export const MenuItems = ({ session, handleScanClick, handleConfigClick, handleL
     <>
       <DropdownMenuItem 
         onClick={handleScanClick} 
-        className="py-3 md:py-2.5 px-4 cursor-pointer touch-manipulation"
+        className="py-3 md:py-2.5 px-4 cursor-pointer touch-manipulation golden-hover"
       >
         <Home className="mr-2 h-5 w-5 md:h-4 md:w-4" />
         Home
@@ -25,7 +25,7 @@ export const MenuItems = ({ session, handleScanClick, handleConfigClick, handleL
       
       <DropdownMenuItem 
         onClick={() => navigate("/features")} 
-        className="py-3 md:py-2.5 px-4 cursor-pointer touch-manipulation"
+        className="py-3 md:py-2.5 px-4 cursor-pointer touch-manipulation golden-hover"
       >
         <Sparkles className="mr-2 h-5 w-5 md:h-4 md:w-4" />
         Features
@@ -35,14 +35,14 @@ export const MenuItems = ({ session, handleScanClick, handleConfigClick, handleL
         <>
           <DropdownMenuItem 
             onClick={() => navigate("/signup")} 
-            className="py-3 md:py-2.5 px-4 cursor-pointer touch-manipulation"
+            className="py-3 md:py-2.5 px-4 cursor-pointer touch-manipulation golden-hover"
           >
             <UserPlus className="mr-2 h-5 w-5 md:h-4 md:w-4" />
             Sign Up
           </DropdownMenuItem>
           <DropdownMenuItem 
             onClick={() => navigate("/login")} 
-            className="py-3 md:py-2.5 px-4 cursor-pointer touch-manipulation"
+            className="py-3 md:py-2.5 px-4 cursor-pointer touch-manipulation golden-hover"
           >
             <LogIn className="mr-2 h-5 w-5 md:h-4 md:w-4" />
             Login
@@ -52,14 +52,14 @@ export const MenuItems = ({ session, handleScanClick, handleConfigClick, handleL
         <>
           <DropdownMenuItem 
             onClick={handleConfigClick} 
-            className="py-3 md:py-2.5 px-4 cursor-pointer touch-manipulation"
+            className="py-3 md:py-2.5 px-4 cursor-pointer touch-manipulation golden-hover"
           >
             <Settings className="mr-2 h-5 w-5 md:h-4 md:w-4" />
             Settings
           </DropdownMenuItem>
           <DropdownMenuItem 
             onClick={handleLogout} 
-            className="py-3 md:py-2.5 px-4 cursor-pointer touch-manipulation"
+            className="py-3 md:py-2.5 px-4 cursor-pointer touch-manipulation golden-hover"
           >
             Logout
           </DropdownMenuItem>

@@ -1,5 +1,7 @@
 .glass-card {
-  @apply bg-white/80 backdrop-blur-lg border border-white/40 shadow-lg;
+  /* @apply bg-white/80 backdrop-blur-lg border border-white/40 shadow-lg; */
+  background-color: #957148;
+  background-color: white;
 }
 
 .purple-gradient {
@@ -18,4 +20,24 @@
 
 .dashboard-content {
   @apply bg-white/95 rounded-lg shadow-lg p-6;
+}
+
+.cover-page, .features-section, .signup-cover{
+  background: url('/lovable-uploads/cover.png');
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benefits-section, .testimonial-section, .cta-section, .available-treatments, 
+.signup-form, .auth-form{
+  background: url('/lovable-uploads/bg.png');
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

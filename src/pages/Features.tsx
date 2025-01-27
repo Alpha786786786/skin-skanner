@@ -38,21 +38,22 @@ export const Features = () => {
     <div className="min-h-screen bg-gradient-to-b from-medspa-50 to-white">
       <Navigation session={null} />
       
-      <div className="container mx-auto px-4 py-12">
+      <div className="">
           <ReactPageScroller
             
-            onBeforePageScroll={() => handleBeforePageChange(0)}
+            onBeforePageScroll={() => handleBeforePageChange(1)}
             customPageNumber={currentPage}
             containerWidth={'100%'}
             animationTimer={400}
             >
 
+          <div className='features-section'>
           <SectionContainer height={isSmallScreen ? 50 : 50}>
               <div className="text-center mb-12" >
-              <h1 className="text-4xl font-bold text-indigo-900 mb-4">
+              <h1 className="text-4xl font-bold mb-4 text-white">
                 Transform Your Med Spa with AI-Powered Innovation
               </h1>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
                 Join leading med spas using Skin Skanner AI to revolutionize their consultation process and dramatically increase bookings
               </p>
             </div>
@@ -61,34 +62,37 @@ export const Features = () => {
 
           {/* <SectionContainer height={isSmallScreen ? 50 : 25}> */}
           <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold text-indigo-900 mb-4">
+            <h2 className="text-3xl font-bold text-white mb-4">
               Customized Treatment Recommendations
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
               Ensure your AI analysis only recommends treatments you actually offer, increasing booking conversion rates and client satisfaction
             </p>
           </div>
           </SectionContainer>
+          </div>
+
 
 
         {/* Treatment Selection Feature Highlight */}
         <SectionContainer height={100}>
-        <div className="mb-16">
+        <div className=" py-4 available-treatments">
           <TreatmentDemo />
         </div>
         </SectionContainer>
          {isSmallScreen && <SectionContainer height={25}>
           <div></div>
         </SectionContainer>}
-        <SectionContainer height={isSmallScreen ? 100 : 50}>
-        <div className="mb-16">
+        <div className="available-treatments">
+        <SectionContainer height={isSmallScreen ? 100 : 100}>
           <IntegrationProcess />
-        </div>
         </SectionContainer>
+        </div>
         
 
         {/* <SectionContainer height={100}> */}
-        <div className="grid gap-8 mb-12">
+        <div className="available-treatments py-4">
+        <div className="grid gap-8">
           {features.map((feature, index) => (
             <FeatureCard
               key={index}
@@ -99,25 +103,29 @@ export const Features = () => {
             />
           ))}
         </div>
+        </div>
+
         {/* </SectionContainer> */}
         {/* Other Features */}
-        <SectionContainer height={isSmallScreen ? 100 : 50}>
+        {/* <SectionContainer height={isSmallScreen ? 100 : 50}>
           <div></div>
-        </SectionContainer>
+        </SectionContainer> */}
+          <div className="available-treatments">
         <SectionContainer height={100}>
-        <div className="text-center">
+          <div className="text-center">
           <Button 
             size="lg"
             onClick={() => navigate("/signup")}
-            className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-lg text-lg"
+            className="bg-golden text-white px-8 py-3 rounded-lg text-lg"
           >
             Sign Up Now
           </Button>
-          <p className="mt-4 text-gray-600">
+          <p className="mt-4 text-gray-300">
             Join the leading med spas revolutionizing their business with AI
           </p>
         </div>
         </SectionContainer>
+          </div>
 
  
         </ReactPageScroller>

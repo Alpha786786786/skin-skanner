@@ -41,6 +41,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-gradient-to-br from-secondary via-muted to-secondary min-h-screen text-foreground;
+    /* @apply bg-gradient-to-br from-secondary via-muted to-secondary min-h-screen text-foreground; */
   }
 }

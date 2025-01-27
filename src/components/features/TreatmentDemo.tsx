@@ -50,10 +50,10 @@ const TreatmentDemo = () => {
   return (
     <div className="max-w-3xl mx-auto p-6 rounded-xl bg-white/80 backdrop-blur-lg border border-white/20 shadow-xl">
       <div className="mb-6">
-        <h3 className="text-2xl font-bold text-indigo-900 mb-2">
+        <h3 className="text-2xl font-bold text-[#957148] mb-2">
           Available Treatments
         </h3>
-        <p className="text-gray-600">
+        <p className="text-gray-800">
           Configure which treatments you offer to ensure AI recommendations match your services
         </p>
       </div>

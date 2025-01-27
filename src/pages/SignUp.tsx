@@ -95,17 +95,23 @@ const SignUp = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-medspa-50 to-white">
       <Navigation session={session} />
-      <div className="container max-w-md mx-auto px-4 py-8">
+      <div className="">
+        <div className="signup-cover">
         <Header />
-        <div className="mt-8 bg-white p-8 rounded-lg shadow-lg">
+        </div>
+        <div >
           {showBusinessNameForm ? (
-            <BusinessNameForm 
+            <div className="mt-8 bg-white p-8 rounded-lg shadow-lg">
+              <BusinessNameForm 
               userId={session?.user?.id} 
               onComplete={() => setShowBusinessNameForm(false)} 
             />
+            </div>
           ) : (
             <>
-              <h2 className="text-2xl font-semibold mb-6 text-center">Business Owner Sign Up</h2>
+              <div className="signup-form">
+                <div className="container max-w-md mx-3 px-4 py-8 rounded-lg bg-white">
+                <h2 className="text-2xl font-semibold mb-6 text-center">Business Owner Sign Up</h2>
               <PlanSelection planType={planType} setPlanType={setPlanType} />
               <SignUpForm
                 loading={loading}
@@ -114,6 +120,8 @@ const SignUp = () => {
                 onSubmit={handleSignUp}
                 onLoginClick={() => navigate("/login")}
               />
+                </div>
+              </div>
             </>
           )}
         </div>

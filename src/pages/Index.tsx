@@ -103,10 +103,15 @@ const Index = () => {
           {/* <div className="min-h-screen bg-gradient-to-b from-medspa-50 to-white"> */}
             <HeroSection />
             <BenefitsSection />
+            {isSmallScreen && (
+              <SectionContainer height={100}>
+                <div className="testimonial-section"></div>
+              </SectionContainer>
+            )}
             <TestimonialsSection />
             {isSmallScreen && (
-              <SectionContainer height={80}>
-                <div></div>
+              <SectionContainer height={100}>
+                <div className="testimonial-section"></div>
               </SectionContainer>
             )}
 
