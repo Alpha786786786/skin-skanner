@@ -41,7 +41,11 @@ export const Navigation = ({ session }: { session: any }) => {
   };
 
   return (
-    <div className="fixed top-3 right-3 md:top-4 md:right-4 z-50">
+    <>
+    <div className="fixed top-3 left-3 md:top-4 md:left-4 z-50">
+      <img src="/lovable-uploads/logo.png" alt="" width={200}  />
+    </div>
+      <div className="fixed top-3 right-3 md:top-4 md:right-4 z-50">
       <NavigationDropdown
         session={session}
         handleScanClick={handleScanClick}
@@ -49,5 +53,6 @@ export const Navigation = ({ session }: { session: any }) => {
         handleLogout={handleLogout}
       />
     </div>
+    </>
   );
 };

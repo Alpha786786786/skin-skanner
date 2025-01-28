@@ -22,7 +22,7 @@
   @apply bg-white/95 rounded-lg shadow-lg p-6;
 }
 
-.cover-page, .features-section, .signup-cover{
+.cover-page{
   background: url('/lovable-uploads/cover.png');
   background-size: cover;
   background-position: center center;
@@ -32,7 +32,7 @@
   justify-content: center;
 }
 .benefits-section, .testimonial-section, .cta-section, .available-treatments, 
-.signup-form, .auth-form{
+.signup-form, .auth-form, .features-section, .signup-cover{
   background: url('/lovable-uploads/bg.png');
   background-size: cover;
   background-position: center center;
