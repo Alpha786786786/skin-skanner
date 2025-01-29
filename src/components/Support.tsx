@@ -68,7 +68,7 @@ export const Support = () => {
     <div className="fixed bottom-4 right-4 z-50">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
-          <Button variant="outline" className="rounded-full shadow-lg">
+          <Button variant="outline" className="rounded-full golden-hover  shadow-lg">
             <Bot className="h-4 w-4 mr-2" />
             Jenny - Support
           </Button>

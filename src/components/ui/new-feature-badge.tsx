@@ -10,7 +10,7 @@ export const NewFeatureBadge = ({ className }: NewFeatureBadgeProps) => {
   return (
     <span 
       className={cn(
-        "inline-flex items-center gap-1 px-2 py-1 text-xs font-medium bg-primary/10 text-primary rounded-full animate-pulse",
+        "inline-flex items-center gap-1 px-2 py-1 text-xs font-medium bg-golden-10 golden rounded-full animate-pulse",
         className
       )}
     >

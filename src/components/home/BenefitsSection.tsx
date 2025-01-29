@@ -37,17 +37,17 @@ export const BenefitsSection = () => {
               key={index}
               className="glass-card p-6 rounded-xl flex items-start gap-4 hover:shadow-lg transition-all duration-300"
             >
-              <div className="rounded-full bg-primary/10 p-2 mt-1">
-                <Check className="h-5 w-5 text-primary" />
+              <div className="rounded-full bg-golden-10 p-2 mt-1">
+                <Check className="h-5 w-5 golden" />
               </div>
               <div>
                 <div className="flex items-center gap-2 mb-2">
-                  <h3 className="text-xl font-semibold text-indigo-900">
+                  <h3 className="text-xl font-semibold golden">
                     {benefit.title}
                   </h3>
                   {benefit.isNew && <NewFeatureBadge />}
                 </div>
-                <p className="text-indigo-700">{benefit.description}</p>
+                <p className="golden text-left">{benefit.description}</p>
               </div>
             </div>
           ))}
