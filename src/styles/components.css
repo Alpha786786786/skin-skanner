@@ -30,9 +30,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 2;
 }
 .benefits-section, .testimonial-section, .cta-section, .available-treatments, 
-.signup-form, .auth-form, .features-section, .signup-cover{
+.signup-form, .auth-form, .features-section, .signup-cover, .video-section{
   background: url('/lovable-uploads/bg.png');
   background-size: cover;
   background-position: center center;
@@ -40,4 +42,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.video-section{
+  background: none;
+}
+#myVideo {
+  background: black;
+  position: fixed;
+  right: 0;
+  left: 0;
+  /* bottom: 0; */
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }

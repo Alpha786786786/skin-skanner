@@ -12,6 +12,7 @@ import { TestimonialsSection } from '@/components/home/TestimonialsSection';
 import { CTASection } from '@/components/home/CTASection';
 import { Header } from '@/components/Header';
 import ReactPageScroller, { SectionContainer } from 'react-page-scroller';
+import { VideoSection } from '@/components/home/VideoSection';
 
 const Index = () => {
   const { session, isInitializing } = useAuthInitialization();
@@ -102,6 +103,7 @@ const Index = () => {
           >
           {/* <div className="min-h-screen bg-gradient-to-b from-medspa-50 to-white"> */}
             <HeroSection />
+            <VideoSection/>
             <BenefitsSection />
             {isSmallScreen && (
               <SectionContainer height={100}>
