@@ -79,9 +79,13 @@ export const Features = () => {
           <TreatmentDemo />
         </div>
         </SectionContainer>
-         {isSmallScreen && <SectionContainer height={25}>
+         {isSmallScreen && 
+         <SectionContainer height={15}>
+         <div className="available-treatments">
           <div></div>
-        </SectionContainer>}
+         </div>
+        </SectionContainer>
+        }
         <div className="available-treatments">
         <SectionContainer height={isSmallScreen ? 100 : 100}>
           <IntegrationProcess />
