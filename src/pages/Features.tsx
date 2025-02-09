@@ -41,13 +41,12 @@ export const Features = () => {
       <div className="">
           <ReactPageScroller
             
-            onBeforePageScroll={() => handleBeforePageChange(1)}
-            customPageNumber={currentPage}
+
             containerWidth={'100%'}
             animationTimer={400}
             >
 
-          <div className='features-section'>
+          <div className='features-section p-4'>
           <SectionContainer height={isSmallScreen ? 50 : 50}>
               <div className="text-center mb-12" >
               <h1 className="text-4xl font-bold mb-4 text-white">
@@ -76,7 +75,7 @@ export const Features = () => {
 
         {/* Treatment Selection Feature Highlight */}
         <SectionContainer height={100}>
-        <div className=" py-4 available-treatments">
+        <div className="p-4 available-treatments">
           <TreatmentDemo />
         </div>
         </SectionContainer>
@@ -91,7 +90,7 @@ export const Features = () => {
         
 
         {/* <SectionContainer height={100}> */}
-        <div className="available-treatments py-4">
+        <div className="available-treatments p-4">
         <div className="grid gap-8">
           {features.map((feature, index) => (
             <FeatureCard
@@ -107,11 +106,11 @@ export const Features = () => {
 
         {/* </SectionContainer> */}
         {/* Other Features */}
-        {/* <SectionContainer height={isSmallScreen ? 100 : 50}>
+        <SectionContainer height={isSmallScreen ? 100 : 0}>
           <div></div>
-        </SectionContainer> */}
-          <div className="available-treatments">
-        <SectionContainer height={100}>
+        </SectionContainer>
+        <div className="available-treatments">
+        <SectionContainer height={25}>
           <div className="text-center">
           <Button 
             size="lg"

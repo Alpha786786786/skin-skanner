@@ -6,7 +6,7 @@ export const HeroSection = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="py-16 md:py-24  bg-gradient-to-b from-medspa-50 to-white cover-page">
+    <div className="py-16 px-3 md:py-24  bg-gradient-to-b from-medspa-50 to-white cover-page">
       <div className="max-w-4xl mx-auto text-center space-y-8">
         <h1 className="text-4xl md:text-6xl font-bold text-[#957148] leading-tight">
           Transform Your Med Spa with
