@@ -21,6 +21,14 @@ export const CTASection = () => {
         >
           Sign Up Now <ArrowRight className="ml-2" />
         </Button>
+        <div className="social-icons">
+          <a href="https://youtube.com/@skinskannerai" target="_blank" rel="noopener noreferrer">
+            <img src="/lovable-uploads/youtube.svg" className="cursor-pointer touch-manipulation" alt="" width={48}  />
+          </a>
+          <a href="https://instagram.com/skinskannerai" target="_blank" rel="noopener noreferrer">
+            <img src="/lovable-uploads/instagram.svg" className="cursor-pointer touch-manipulation" alt="" width={48}  />
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ import ReactPageScroller, { SectionContainer } from 'react-page-scroller';
 export const Features = () => {
   const [currentPage, setCurrentPage] = useState(null);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 800);
-  
+
   const navigate = useNavigate();
   const handlePageChange = (number) => {
     setCurrentPage(number);
@@ -21,12 +21,12 @@ export const Features = () => {
     console.log(number);
   };
 
-    React.useEffect(() => {
-      document.body.style.overflow = 'hidden'; 
+    React.useEffect(() => {        
+      document.body.style.overflow = 'hidden';
       const handleResize = () => {
         setIsSmallScreen(window.innerWidth < 800);
       };
-  
+
       window.addEventListener("resize", handleResize);
 
       return () => {
@@ -35,12 +35,11 @@ export const Features = () => {
       }
     });
   return (
-    <div className="min-h-screen bg-gradient-to-b from-medspa-50 to-white">
+    <>
       <Navigation session={null} />
-      
-      <div className="">
+
           <ReactPageScroller
-            
+
 
             containerWidth={'100%'}
             animationTimer={400}
@@ -79,7 +78,7 @@ export const Features = () => {
           <TreatmentDemo />
         </div>
         </SectionContainer>
-         {isSmallScreen && 
+         {isSmallScreen &&
          <SectionContainer height={15}>
          <div className="available-treatments">
           <div></div>
@@ -87,11 +86,11 @@ export const Features = () => {
         </SectionContainer>
         }
         <div className="available-treatments">
-        <SectionContainer height={isSmallScreen ? 100 : 100}>
+        {/* <SectionContainer height={isSmallScreen ? 100 : 100}> */}
           <IntegrationProcess />
-        </SectionContainer>
+        {/* </SectionContainer> */}
         </div>
-        
+
 
         {/* <SectionContainer height={100}> */}
         <div className="available-treatments p-4">
@@ -107,33 +106,31 @@ export const Features = () => {
           ))}
         </div>
         </div>
-
+        {/* </SectionContainer> */}
         {/* </SectionContainer> */}
         {/* Other Features */}
-        <SectionContainer height={isSmallScreen ? 100 : 0}>
+        {/* <SectionContainer height={isSmallScreen ? 100 : 0}>
           <div></div>
-        </SectionContainer>
-        <div className="available-treatments">
-        <SectionContainer height={25}>
+        </SectionContainer> */}
+
+        <div className="available-treatments pt-250-sm">
           <div className="text-center">
-          <Button 
-            size="lg"
-            onClick={() => navigate("/signup")}
-            className="bg-golden text-white px-8 py-3 rounded-lg text-lg"
-          >
-            Sign Up Now
-          </Button>
-          <p className="mt-4 text-gray-300">
-            Join the leading med spas revolutionizing their business with AI
-          </p>
-        </div>
-        </SectionContainer>
+            <Button
+              size="lg"
+              onClick={() => navigate("/signup")}
+              className="bg-golden text-white px-8 py-3 rounded-lg text-lg"
+            >
+              Sign Up Now
+            </Button>
+            <p className="mt-4 text-gray-300">
+              Join the leading med spas revolutionizing their business with AI
+            </p>
+          </div>
           </div>
 
- 
         </ReactPageScroller>
-      </div>
-    </div>
+
+    </>
   );
 };
 

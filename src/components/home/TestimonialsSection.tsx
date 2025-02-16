@@ -39,13 +39,13 @@ export const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="glass-card p-6 rounded-xl flex flex-col h-full hover:bg-white/30 transition-all duration-300"
+              className="glass-card p-6 rounded-xl flex flex-col h-full hover:bg-white/70 transition-all duration-300"
             >
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star
                     key={i}
-                    className="h-5 w-5 fill-primary text-primary"
+                    className="h-5 w-5 fill-golden golden"
                   />
                 ))}
               </div>
