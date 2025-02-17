@@ -105,11 +105,11 @@ const Index = () => {
             <HeroSection />
             <VideoSection/>
             <BenefitsSection />
-            {isSmallScreen && (
+            {/* {isSmallScreen && (
               <SectionContainer height={100}>
                 <div className="testimonial-section"></div>
               </SectionContainer>
-            )}
+            )} */}
             <TestimonialsSection />
             {isSmallScreen && (
               <SectionContainer height={100}>

@@ -48,7 +48,7 @@ export const Features = () => {
           <div className='features-section p-4'>
           <SectionContainer height={isSmallScreen ? 50 : 50}>
               <div className="text-center mb-12" >
-              <h1 className="text-4xl font-bold mb-4 text-white">
+              <h1 className="text-3xl font-bold mb-4 text-white">
                 Transform Your Med Spa with AI-Powered Innovation
               </h1>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
