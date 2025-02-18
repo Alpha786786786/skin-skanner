@@ -72,4 +72,21 @@
   #myVideo {
     object-fit: contain;
   }
+  .cta-section{
+    /* margin-top: 230px; */
+  }
+  .signup-btn{
+    /* margin-top: 15px !important; */
+    /* height: max-content !important; */
+    /* padding: 8px 16px !important; */
+  }
+  .social-icons{
+    /* margin-top: 0; */
+  }
+  .social-icons img{
+    /* width: 30px; */
+  }
+  .glass-card{
+    padding: 10px;
+  }
 }

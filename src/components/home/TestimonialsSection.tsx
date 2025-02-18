@@ -32,16 +32,16 @@ export const TestimonialsSection = () => {
   return (
     <div className="py-16 testimonial-section">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+        <h2 className="text-xl md:text-4xl font-bold text-center text-white mb-6 md:mb-12">
           Trusted by Leading Med Spas
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="glass-card p-6 rounded-xl flex flex-col h-full hover:bg-white/70 transition-all duration-300"
+              className="glass-card p-3 md:p-6 rounded-xl flex flex-col h-full hover:bg-white/70 transition-all duration-300"
             >
-              <div className="flex gap-1 mb-4">
+              <div className="flex gap-1 mb-2 md:mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star
                     key={i}
@@ -49,9 +49,9 @@ export const TestimonialsSection = () => {
                   />
                 ))}
               </div>
-              <p className="text-gray-800 italic flex-grow">"{testimonial.testimonial}"</p>
-              <div className="mt-6 pt-4 border-t border-gray-200">
-                <p className="font-semibold text-gray-900 text-lg">
+              <p className="text-gray-800 italic flex-grow text-sm md:text-md">"{testimonial.testimonial}"</p>
+              <div className=" mt-2 md:mt-6 pt-2 md:pt-4 border-t border-gray-200">
+                <p className="font-semibold text-gray-900 text-md md:text-lg">
                   {testimonial.author_name}
                 </p>
                 <p className="text-sm text-gray-700">

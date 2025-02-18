@@ -8,16 +8,16 @@ export const CTASection = () => {
   return (
     <div className="py-16 cta-section">
       <div className="max-w-4xl mx-auto text-center px-4 space-y-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-white">
+        <h2 className="text-lg md:text-4xl font-bold text-white">
           Ready to Transform Your Business?
         </h2>
-        <p className="text-xl text-white">
+        <p className="text-md md:text-xl text-white">
           Join leading med spas using Skin Skanner AI to enhance their consultations and boost bookings.
         </p>
         <Button
           onClick={() => navigate("/signup")}
           size="lg"
-          className="text-lg px-8 py-6 bg-golden"
+          className="text-sm md:text-lg px-8 py-6 bg-golden signup-btn"
         >
           Sign Up Now <ArrowRight className="ml-2" />
         </Button>

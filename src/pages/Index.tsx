@@ -111,11 +111,11 @@ const Index = () => {
               </SectionContainer>
             )} */}
             <TestimonialsSection />
-            {isSmallScreen && (
+            {/* {isSmallScreen && (
               <SectionContainer height={100}>
                 <div className="testimonial-section"></div>
               </SectionContainer>
-            )}
+            )} */}
 
             <CTASection />
           {/* </div> */}
